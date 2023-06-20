@@ -97,26 +97,23 @@
     <section class="seccion4 py-2 py-md-5">
         <h6 class="text-center text-uppercase client-testimonials fraunces grayish-blue py-5">Client testimonials</h6>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center pb-5">
-            <div class="px-3 px-md-2 px-lg-5 text-center">
+            <div class="px-3 px-md-2 px-lg-5 text-center cliente">
                <img src="./assets/img/image-emily.jpg" alt="imagen de cliente 1" class="rounded-circle img-cliente">
                <p class="barlow dark-grayish-blue py-4 py-md-5 px-4 mb-0">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-
                <h5 class="very-dark-grayish fraunces">Emily R.</h5>
                <p class="barlow grayish-blue fs-6 fw-light mb-5 mb-md-2">Marketing Director</p>
             </div>
 
-            <div class="px-3 px-md-2 px-lg-5 text-center">
+            <div class="px-3 px-md-2 px-lg-5 text-center cliente">
                 <img src="./assets/img/image-thomas.jpg" alt="imagen de cliente 2" class="rounded-circle img-cliente">
                 <p class="barlow dark-grayish-blue py-4 py-md-5 px-4 mb-0">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-
                <h5 class="very-dark-grayish fraunces">Thomas S.</h5>
                <p class="barlow grayish-blue fs-6 fw-light mb-5 mb-md-2">Chief Operating Officer</p>
             </div>
 
-            <div class="px-3 px-md-2 px-lg-5 text-center">
+            <div class="px-3 px-md-2 px-lg-5 text-center cliente">
                 <img src="./assets/img/image-jennie.jpg" alt="imagen de cliente 3" class="rounded-circle img-cliente">
                 <p class="barlow dark-grayish-blue py-4 py-md-5 px-4 mb-0">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-
                <h5 class="very-dark-grayish fraunces">Jennie F.</h5>
                <p class="barlow grayish-blue fs-6 fw-light mb-5 mb-md-2">Business Owner</p>
             </div>
@@ -125,21 +122,25 @@
 
     <!-- Seccion 5 -->
     <section class="seccion5">
-      <div class="d-flex justify-content-center align-items-center">
-            <div class="">
-                <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="imagen de botellas" class="img-fluid">
-            </div>
-            <div class="">
-                <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="imagen de naranja" class="img-fluid">
-            </div>
+        <picture>
+          <source srcset="./assets/img/desktop/image-gallery-milkbottles.jpg">
+          <img src="./assets/img/desktop/image-gallery-milkbottles.jpg" alt="imagen de botellas" class="img-fluid">
+        </picture>
 
-          <div class="">
-              <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="imagen de cono" class="img-fluid">
-          </div>
-          <div class="">
-              <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="imagen de cubos de azúcar" class="img-fluid">
-          </div>
-        </div>
+        <picture>
+          <source srcset="./assets/img/desktop/image-gallery-orange.jpg">
+          <img src="./assets/img/desktop/image-gallery-orange.jpg" alt="imagen de botellas" class="img-fluid">
+        </picture>
+
+        <picture>
+          <source srcset="./assets/img/desktop/image-gallery-cone.jpg">
+          <img src="./assets/img/desktop/image-gallery-cone.jpg" alt="imagen de cono" class="img-fluid">
+        </picture>
+
+        <picture>
+          <source srcset="./assets/img/desktop/image-gallery-sugarcubes.jpg">
+          <img src="./assets/img/desktop/image-gallery-sugarcubes.jpg" alt="imagen de cubos de azúcar" class="img-fluid">
+        </picture>
   </section>
   </main>
 
@@ -167,6 +168,8 @@
               <img src="./assets/img/icon-pinterest.svg" alt="Logo de pinterest">
             </a>
         </div>
+
+        <p class="fw-bold dark-cyan mb-0 text-center"> <small>2023 © Frontend Mentor Challenge <br class="d-block d-md-none"> - Developed by Carla Sablic</small></p>
     </div>
   </footer>
 

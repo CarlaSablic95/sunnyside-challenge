@@ -19,20 +19,18 @@ body {
         "footer footer";
 }
 
-/* Scroll vertical */
-
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
+    width: 10px;
   }
   
   body::-webkit-scrollbar-track {
-    background-color: #d9d9d9;        /* color of the tracking area */
+    background-color: #d9d9d9;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #008D7E;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    /* border: 2px solid #3EBFFF;  creates padding around scroll thumb */
+    background-color: #008D7E;
+    border-radius: 20px;
+    
   }
 
 .bg-header {
@@ -63,15 +61,23 @@ body::-webkit-scrollbar {
 
 /* Títulos */
 
-h1,
-.client-testimonials {
+h1 {
     letter-spacing: 5px;
+    font-size: 3.2rem;
 }
 
-h3,
-h4,
-h5 {
+.client-testimonials {
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+h3, h4, h5 {
     font-weight: 900 !important;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
 }
 
 .titulo-footer {
@@ -142,11 +148,11 @@ a:hover {
 }
 
 .padding-right-left {
-    padding: 0 4rem !important;
+    padding: 0 8rem !important;
 }
 
 .margin-right-left {
-    margin: 0 4rem !important;
+    margin: 0 8rem !important;
 }
 
 header {
@@ -185,6 +191,9 @@ main {
 
 .seccion5 {
     grid-area: seccion5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .graphic-design {
@@ -216,7 +225,35 @@ footer {
     background-color: #90D4C5;
 }
 
+
+
 /* MEDIA QUERIES */
+
+@media (max-width: 1336px) {
+
+    h1, .client-testimonials {
+        letter-spacing: 5px;
+        font-size: 2rem;
+    }
+    
+h3, h4, h5 {
+    font-weight: 900 !important;
+    font-size: 2.1rem;
+}
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cliente > p {
+        font-size: 1rem;
+    }
+
+    .cliente > h5 {
+        font-size: 1.5rem;
+    }
+
+}
 
 @media (max-width: 992px) {
 
@@ -242,12 +279,51 @@ footer {
             "seccion5 seccion5";
     }
 
-    /* .w-33 {
-        width: 33%;
-    } */
-
     .logo-footer {
         width: 130px;
     }
 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .client-testimonials {
+        letter-spacing: 5px;
+        font-size: 1.2rem;
+    }
+
+    .cliente > p {
+        padding: 2rem 10rem !important;
+    }
+
+    .padding-right-left {
+        padding: 0 3rem !important;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 0.5fr);
+        grid-template-areas:
+            "seccion1 seccion1"
+            "seccion2 seccion2"
+            "seccion3 seccion3"
+            "seccion4 seccion4"
+            "seccion5 seccion5";
+    }
+
+    .seccion5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .cliente > p {
+        padding: 2rem 5rem !important;
+    }
 }
