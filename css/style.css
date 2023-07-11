@@ -21,35 +21,35 @@ body {
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background-color: #d9d9d9;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #008D7E;
     border-radius: 20px;
-  }
-  
-  .menu ul {
-      display: flex;
-      align-items: baseline;
-  }
-  
-  .menu ul li {
-      margin-left: 36px;
-  }
-  
-  .menu #btn-menu {
+}
+
+.menu ul {
+    display: flex;
+    align-items: baseline;
+}
+
+.menu ul li {
+    margin-left: 36px;
+}
+
+.menu #btn-menu {
     display: none;
-  }
+}
 
 ul {
     list-style-type: none;
 }
 
-#nav-menu > ul > li > .link {
+#nav-menu>ul>li>.link {
     color: #fff;
 }
 
@@ -58,11 +58,12 @@ ul {
     padding: 5px 30px;
 }
 
-#selected > a {
+#selected>a {
     color: #000 !important;
 }
 
-#selected:hover, #selected:hover > a {
+#selected:hover,
+#selected:hover>a {
     background-color: #6FCFFF !important;
     color: #fff !important;
 }
@@ -104,10 +105,12 @@ h1 {
     font-size: 2rem;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
     font-weight: 900 !important;
     font-size: 2rem;
-} 
+}
 
 h5 {
     font-weight: 900 !important;
@@ -155,6 +158,7 @@ p {
 .border-yellow {
     border-bottom: 5px #FFF2BB solid;
 }
+
 .border-salmon {
     border-bottom: 5px #FFDBD2 solid;
 }
@@ -267,21 +271,23 @@ footer {
         letter-spacing: 5px;
         font-size: 2rem;
     }
-    
-h3, h4, h5 {
-    font-weight: 900 !important;
-    font-size: 2.1rem;
-}
+
+    h3,
+    h4,
+    h5 {
+        font-weight: 900 !important;
+        font-size: 2.1rem;
+    }
 
     p {
         font-size: 1rem;
     }
 
-    .cliente > p {
+    .cliente>p {
         font-size: 1rem;
     }
 
-    .cliente > h5 {
+    .cliente>h5 {
         font-size: 1.5rem;
     }
 
@@ -327,7 +333,7 @@ h3, h4, h5 {
         font-size: 2rem;
     }
 
-    #nav-menu > ul > li > .link {
+    #nav-menu>ul>li>.link {
         color: #818498;
     }
 
@@ -340,7 +346,7 @@ h3, h4, h5 {
         font-size: 1.2rem;
     }
 
-    .cliente > p {
+    .cliente>p {
         padding: 2rem 10rem !important;
     }
 
@@ -395,13 +401,15 @@ h3, h4, h5 {
 
     .menu #btn-menu {
         display: block;
-      }
+    }
 
-      #nav-menu {
+    #nav-menu {
         display: none;
-      }
+    }
 
-      .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    .bi::before,
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
         font-size: 2rem;
     }
 
@@ -412,7 +420,7 @@ h3, h4, h5 {
 
 
 @media (max-width: 576px) {
-     .cliente > p {
+    .cliente>p {
         padding: 2rem 3rem !important;
     }
 }
