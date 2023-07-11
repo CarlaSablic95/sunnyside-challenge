@@ -17,12 +17,10 @@ link2.onmouseout = () => {
     link2.classList.remove("border-dark-salmon");
 }
 
-let contacto = document.getElementById("contacto");
+let burgerMenu = document.getElementById("btn-menu");
+let navMenu = document.getElementById("nav-menu");
 
-contacto.onmouseover = () => {
-    contacto.classList.add("bg-button");
-}
-
-contacto.onmouseout = () => {
-    contacto.classList.remove("bg-button");
-}
+burgerMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("d-block");
+    navMenu.classList.add("animate__fadeInDown");
+});
